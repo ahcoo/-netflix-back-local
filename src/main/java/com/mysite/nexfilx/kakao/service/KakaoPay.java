@@ -48,9 +48,9 @@ public class KakaoPay {
         params.add("quantity", "1"); // 상품 수량
         params.add("total_amount", "13500"); // 결제 금액
         params.add("tax_free_amount", "0");
-        params.add("approval_url", "http://zeroize.site:3000/choiceprofile"); //결제 완료 시 이동 페이지
-        params.add("cancel_url", "http://zeroize.site:3000/payinfo"); // 결제 취소 시 이동 페이지
-        params.add("fail_url", "http://zeroize.site:3000/payinfo");
+        params.add("approval_url", "http://localhost:3000/choiceprofile"); //결제 완료 시 이동 페이지
+        params.add("cancel_url", "http://localhost:3000/payinfo"); // 결제 취소 시 이동 페이지
+        params.add("fail_url", "http://localhost:3000/payinfo");
 
         HttpEntity<MultiValueMap<String,String>> body = new HttpEntity<MultiValueMap<String , String>>(params, headers);
 
